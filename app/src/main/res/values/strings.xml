@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UnitatiDeCazare</string>
+    <string name="hotel_name">Enter hotel name</string>
+    <string name="hotel_phone">Enter hotel phone number</string>
+    <string name="hotel_website">Enter website address</string>
+    <string name="hotel_address">Enter hotel latitude/longitude</string>
+    <string name="bt_save_new_hotel">SAVE</string>
+    <string name="bt_cancel_new_hotel">CANCEL</string>
+    <string name="Add_new_hotel">Add new hotel</string>
+    <string name="content_descr">Add a new hotel</string>
+    <string name="call">CALL</string>
+    <string name="location">MAP</string>
+    <string name="website">SITE</string>
+</resources>
