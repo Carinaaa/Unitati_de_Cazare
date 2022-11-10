@@ -65,11 +65,14 @@ public class HotelsBaseAdapter extends BaseAdapter {
         bt_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri number = Uri.parse(database.hotelDao().getPhone(hotel_name_view.getText().toString()));
+                Uri number = Uri.parse(database.hotelDao().getPhone(hotel_table_entries.get(i).getHotel_name()));
                 Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
+                System.out.println("Trying to call to... " + hotel_table_entries.get(i).getHotel_name());
                 try{
                     context.startActivity(callIntent);
-                } catch (ActivityNotFoundException e){}
+                } catch (ActivityNotFoundException e){
+                    System.out.println("Enter Exception in Call service...");
+                }
 
             }
         });

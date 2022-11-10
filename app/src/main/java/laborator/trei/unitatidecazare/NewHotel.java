@@ -37,7 +37,7 @@ public class NewHotel extends AppCompatActivity {
                 String hotel_phone_string = hotel_phone.getText().toString().trim();
                 String hotel_website_string = hotel_website.getText().toString().trim();
                 String hotel_address_string = hotel_address.getText().toString().trim();
-                if((!hotel_name_string.equals("")) && 
+                if((!hotel_name_string.equals("")) &&
                         (!hotel_phone_string.equals("")) &&
                         (!hotel_website_string.equals("")) &&
                         (!hotel_address_string.equals(""))){
