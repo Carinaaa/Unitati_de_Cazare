@@ -66,8 +66,9 @@ public class HotelsBaseAdapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 Uri number = Uri.parse(database.hotelDao().getPhone(hotel_table_entries.get(i).getHotel_name()));
-                Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
-                System.out.println("Trying to call to... " + hotel_table_entries.get(i).getHotel_name());
+                Intent callIntent = new Intent(Intent.ACTION_CALL, number);
+                System.out.println("Trying to call to... " + hotel_table_entries.get(i).getHotel_name() + " "
+                + "with phone number... " + database.hotelDao().getPhone(hotel_table_entries.get(i).getHotel_name()));
                 try{
                     context.startActivity(callIntent);
                 } catch (ActivityNotFoundException e){
